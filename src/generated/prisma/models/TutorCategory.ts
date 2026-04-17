@@ -26,52 +26,52 @@ export type AggregateTutorCategory = {
 
 export type TutorCategoryMinAggregateOutputType = {
   id: string | null
-  createdAt: Date | null
-  updatedAt: Date | null
   tutorId: string | null
   categoryId: string | null
+  createdAt: Date | null
+  updatedAt: Date | null
 }
 
 export type TutorCategoryMaxAggregateOutputType = {
   id: string | null
-  createdAt: Date | null
-  updatedAt: Date | null
   tutorId: string | null
   categoryId: string | null
+  createdAt: Date | null
+  updatedAt: Date | null
 }
 
 export type TutorCategoryCountAggregateOutputType = {
   id: number
-  createdAt: number
-  updatedAt: number
   tutorId: number
   categoryId: number
+  createdAt: number
+  updatedAt: number
   _all: number
 }
 
 
 export type TutorCategoryMinAggregateInputType = {
   id?: true
-  createdAt?: true
-  updatedAt?: true
   tutorId?: true
   categoryId?: true
+  createdAt?: true
+  updatedAt?: true
 }
 
 export type TutorCategoryMaxAggregateInputType = {
   id?: true
-  createdAt?: true
-  updatedAt?: true
   tutorId?: true
   categoryId?: true
+  createdAt?: true
+  updatedAt?: true
 }
 
 export type TutorCategoryCountAggregateInputType = {
   id?: true
-  createdAt?: true
-  updatedAt?: true
   tutorId?: true
   categoryId?: true
+  createdAt?: true
+  updatedAt?: true
   _all?: true
 }
 
@@ -149,10 +149,10 @@ export type TutorCategoryGroupByArgs<ExtArgs extends runtime.Types.Extensions.In
 
 export type TutorCategoryGroupByOutputType = {
   id: string
-  createdAt: Date
-  updatedAt: Date
   tutorId: string
   categoryId: string
+  createdAt: Date
+  updatedAt: Date
   _count: TutorCategoryCountAggregateOutputType | null
   _min: TutorCategoryMinAggregateOutputType | null
   _max: TutorCategoryMaxAggregateOutputType | null
@@ -178,20 +178,20 @@ export type TutorCategoryWhereInput = {
   OR?: Prisma.TutorCategoryWhereInput[]
   NOT?: Prisma.TutorCategoryWhereInput | Prisma.TutorCategoryWhereInput[]
   id?: Prisma.StringFilter<"TutorCategory"> | string
-  createdAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
-  updatedAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
   tutorId?: Prisma.StringFilter<"TutorCategory"> | string
   categoryId?: Prisma.StringFilter<"TutorCategory"> | string
+  createdAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
+  updatedAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
   tutor?: Prisma.XOR<Prisma.TutorProfileScalarRelationFilter, Prisma.TutorProfileWhereInput>
   category?: Prisma.XOR<Prisma.CategoryScalarRelationFilter, Prisma.CategoryWhereInput>
 }
 
 export type TutorCategoryOrderByWithRelationInput = {
   id?: Prisma.SortOrder
-  createdAt?: Prisma.SortOrder
-  updatedAt?: Prisma.SortOrder
   tutorId?: Prisma.SortOrder
   categoryId?: Prisma.SortOrder
+  createdAt?: Prisma.SortOrder
+  updatedAt?: Prisma.SortOrder
   tutor?: Prisma.TutorProfileOrderByWithRelationInput
   category?: Prisma.CategoryOrderByWithRelationInput
 }
@@ -202,20 +202,20 @@ export type TutorCategoryWhereUniqueInput = Prisma.AtLeast<{
   AND?: Prisma.TutorCategoryWhereInput | Prisma.TutorCategoryWhereInput[]
   OR?: Prisma.TutorCategoryWhereInput[]
   NOT?: Prisma.TutorCategoryWhereInput | Prisma.TutorCategoryWhereInput[]
-  createdAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
-  updatedAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
   tutorId?: Prisma.StringFilter<"TutorCategory"> | string
   categoryId?: Prisma.StringFilter<"TutorCategory"> | string
+  createdAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
+  updatedAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
   tutor?: Prisma.XOR<Prisma.TutorProfileScalarRelationFilter, Prisma.TutorProfileWhereInput>
   category?: Prisma.XOR<Prisma.CategoryScalarRelationFilter, Prisma.CategoryWhereInput>
 }, "id" | "tutorId_categoryId">
 
 export type TutorCategoryOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
-  createdAt?: Prisma.SortOrder
-  updatedAt?: Prisma.SortOrder
   tutorId?: Prisma.SortOrder
   categoryId?: Prisma.SortOrder
+  createdAt?: Prisma.SortOrder
+  updatedAt?: Prisma.SortOrder
   _count?: Prisma.TutorCategoryCountOrderByAggregateInput
   _max?: Prisma.TutorCategoryMaxOrderByAggregateInput
   _min?: Prisma.TutorCategoryMinOrderByAggregateInput
@@ -226,10 +226,10 @@ export type TutorCategoryScalarWhereWithAggregatesInput = {
   OR?: Prisma.TutorCategoryScalarWhereWithAggregatesInput[]
   NOT?: Prisma.TutorCategoryScalarWhereWithAggregatesInput | Prisma.TutorCategoryScalarWhereWithAggregatesInput[]
   id?: Prisma.StringWithAggregatesFilter<"TutorCategory"> | string
-  createdAt?: Prisma.DateTimeWithAggregatesFilter<"TutorCategory"> | Date | string
-  updatedAt?: Prisma.DateTimeWithAggregatesFilter<"TutorCategory"> | Date | string
   tutorId?: Prisma.StringWithAggregatesFilter<"TutorCategory"> | string
   categoryId?: Prisma.StringWithAggregatesFilter<"TutorCategory"> | string
+  createdAt?: Prisma.DateTimeWithAggregatesFilter<"TutorCategory"> | Date | string
+  updatedAt?: Prisma.DateTimeWithAggregatesFilter<"TutorCategory"> | Date | string
 }
 
 export type TutorCategoryCreateInput = {
@@ -242,10 +242,10 @@ export type TutorCategoryCreateInput = {
 
 export type TutorCategoryUncheckedCreateInput = {
   id?: string
-  createdAt?: Date | string
-  updatedAt?: Date | string
   tutorId: string
   categoryId: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
 }
 
 export type TutorCategoryUpdateInput = {
@@ -258,18 +258,18 @@ export type TutorCategoryUpdateInput = {
 
 export type TutorCategoryUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
-  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   tutorId?: Prisma.StringFieldUpdateOperationsInput | string
   categoryId?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
 
 export type TutorCategoryCreateManyInput = {
   id?: string
-  createdAt?: Date | string
-  updatedAt?: Date | string
   tutorId: string
   categoryId: string
+  createdAt?: Date | string
+  updatedAt?: Date | string
 }
 
 export type TutorCategoryUpdateManyMutationInput = {
@@ -280,10 +280,10 @@ export type TutorCategoryUpdateManyMutationInput = {
 
 export type TutorCategoryUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
-  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   tutorId?: Prisma.StringFieldUpdateOperationsInput | string
   categoryId?: Prisma.StringFieldUpdateOperationsInput | string
+  createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
+  updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
 
 export type TutorCategoryListRelationFilter = {
@@ -303,26 +303,26 @@ export type TutorCategoryTutorIdCategoryIdCompoundUniqueInput = {
 
 export type TutorCategoryCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  createdAt?: Prisma.SortOrder
-  updatedAt?: Prisma.SortOrder
   tutorId?: Prisma.SortOrder
   categoryId?: Prisma.SortOrder
+  createdAt?: Prisma.SortOrder
+  updatedAt?: Prisma.SortOrder
 }
 
 export type TutorCategoryMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  createdAt?: Prisma.SortOrder
-  updatedAt?: Prisma.SortOrder
   tutorId?: Prisma.SortOrder
   categoryId?: Prisma.SortOrder
+  createdAt?: Prisma.SortOrder
+  updatedAt?: Prisma.SortOrder
 }
 
 export type TutorCategoryMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
-  createdAt?: Prisma.SortOrder
-  updatedAt?: Prisma.SortOrder
   tutorId?: Prisma.SortOrder
   categoryId?: Prisma.SortOrder
+  createdAt?: Prisma.SortOrder
+  updatedAt?: Prisma.SortOrder
 }
 
 export type TutorCategoryCreateNestedManyWithoutCategoryInput = {
@@ -418,9 +418,9 @@ export type TutorCategoryCreateWithoutCategoryInput = {
 
 export type TutorCategoryUncheckedCreateWithoutCategoryInput = {
   id?: string
+  tutorId: string
   createdAt?: Date | string
   updatedAt?: Date | string
-  tutorId: string
 }
 
 export type TutorCategoryCreateOrConnectWithoutCategoryInput = {
@@ -454,10 +454,10 @@ export type TutorCategoryScalarWhereInput = {
   OR?: Prisma.TutorCategoryScalarWhereInput[]
   NOT?: Prisma.TutorCategoryScalarWhereInput | Prisma.TutorCategoryScalarWhereInput[]
   id?: Prisma.StringFilter<"TutorCategory"> | string
-  createdAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
-  updatedAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
   tutorId?: Prisma.StringFilter<"TutorCategory"> | string
   categoryId?: Prisma.StringFilter<"TutorCategory"> | string
+  createdAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
+  updatedAt?: Prisma.DateTimeFilter<"TutorCategory"> | Date | string
 }
 
 export type TutorCategoryCreateWithoutTutorInput = {
@@ -469,9 +469,9 @@ export type TutorCategoryCreateWithoutTutorInput = {
 
 export type TutorCategoryUncheckedCreateWithoutTutorInput = {
   id?: string
+  categoryId: string
   createdAt?: Date | string
   updatedAt?: Date | string
-  categoryId: string
 }
 
 export type TutorCategoryCreateOrConnectWithoutTutorInput = {
@@ -502,9 +502,9 @@ export type TutorCategoryUpdateManyWithWhereWithoutTutorInput = {
 
 export type TutorCategoryCreateManyCategoryInput = {
   id?: string
+  tutorId: string
   createdAt?: Date | string
   updatedAt?: Date | string
-  tutorId: string
 }
 
 export type TutorCategoryUpdateWithoutCategoryInput = {
@@ -516,23 +516,23 @@ export type TutorCategoryUpdateWithoutCategoryInput = {
 
 export type TutorCategoryUncheckedUpdateWithoutCategoryInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  tutorId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  tutorId?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 export type TutorCategoryUncheckedUpdateManyWithoutCategoryInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  tutorId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  tutorId?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 export type TutorCategoryCreateManyTutorInput = {
   id?: string
+  categoryId: string
   createdAt?: Date | string
   updatedAt?: Date | string
-  categoryId: string
 }
 
 export type TutorCategoryUpdateWithoutTutorInput = {
@@ -544,59 +544,59 @@ export type TutorCategoryUpdateWithoutTutorInput = {
 
 export type TutorCategoryUncheckedUpdateWithoutTutorInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  categoryId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  categoryId?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 export type TutorCategoryUncheckedUpdateManyWithoutTutorInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  categoryId?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  categoryId?: Prisma.StringFieldUpdateOperationsInput | string
 }
 
 
 
 export type TutorCategorySelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  createdAt?: boolean
-  updatedAt?: boolean
   tutorId?: boolean
   categoryId?: boolean
+  createdAt?: boolean
+  updatedAt?: boolean
   tutor?: boolean | Prisma.TutorProfileDefaultArgs<ExtArgs>
   category?: boolean | Prisma.CategoryDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["tutorCategory"]>
 
 export type TutorCategorySelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  createdAt?: boolean
-  updatedAt?: boolean
   tutorId?: boolean
   categoryId?: boolean
+  createdAt?: boolean
+  updatedAt?: boolean
   tutor?: boolean | Prisma.TutorProfileDefaultArgs<ExtArgs>
   category?: boolean | Prisma.CategoryDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["tutorCategory"]>
 
 export type TutorCategorySelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
-  createdAt?: boolean
-  updatedAt?: boolean
   tutorId?: boolean
   categoryId?: boolean
+  createdAt?: boolean
+  updatedAt?: boolean
   tutor?: boolean | Prisma.TutorProfileDefaultArgs<ExtArgs>
   category?: boolean | Prisma.CategoryDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["tutorCategory"]>
 
 export type TutorCategorySelectScalar = {
   id?: boolean
-  createdAt?: boolean
-  updatedAt?: boolean
   tutorId?: boolean
   categoryId?: boolean
+  createdAt?: boolean
+  updatedAt?: boolean
 }
 
-export type TutorCategoryOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "createdAt" | "updatedAt" | "tutorId" | "categoryId", ExtArgs["result"]["tutorCategory"]>
+export type TutorCategoryOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "tutorId" | "categoryId" | "createdAt" | "updatedAt", ExtArgs["result"]["tutorCategory"]>
 export type TutorCategoryInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   tutor?: boolean | Prisma.TutorProfileDefaultArgs<ExtArgs>
   category?: boolean | Prisma.CategoryDefaultArgs<ExtArgs>
@@ -618,10 +618,10 @@ export type $TutorCategoryPayload<ExtArgs extends runtime.Types.Extensions.Inter
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
-    createdAt: Date
-    updatedAt: Date
     tutorId: string
     categoryId: string
+    createdAt: Date
+    updatedAt: Date
   }, ExtArgs["result"]["tutorCategory"]>
   composites: {}
 }
@@ -1048,10 +1048,10 @@ export interface Prisma__TutorCategoryClient<T, Null = never, ExtArgs extends ru
  */
 export interface TutorCategoryFieldRefs {
   readonly id: Prisma.FieldRef<"TutorCategory", 'String'>
-  readonly createdAt: Prisma.FieldRef<"TutorCategory", 'DateTime'>
-  readonly updatedAt: Prisma.FieldRef<"TutorCategory", 'DateTime'>
   readonly tutorId: Prisma.FieldRef<"TutorCategory", 'String'>
   readonly categoryId: Prisma.FieldRef<"TutorCategory", 'String'>
+  readonly createdAt: Prisma.FieldRef<"TutorCategory", 'DateTime'>
+  readonly updatedAt: Prisma.FieldRef<"TutorCategory", 'DateTime'>
 }
     
 

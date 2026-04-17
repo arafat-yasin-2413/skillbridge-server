@@ -36,13 +36,13 @@ model Category {
 }
 
 model TutorCategory {
-    id        String   @id @default(uuid())
-    createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
-
+    id         String @id @default(uuid())
     // Foreign keys
     tutorId    String
     categoryId String
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 
     // Relations
     tutor    TutorProfile @relation(fields: [tutorId], references: [id])
@@ -54,24 +54,23 @@ model TutorCategory {
 
 model TutorProfile {
     id           String   @id @default(uuid())
+    name         String
+    // Foreign key
+    userId       String   @unique
     bio          String?
     hourlyRate   Float
     availability String
     rating       Float    @default(0)
     totalReviews Int      @default(0)
-    createdAt    DateTime @default(now())
     updatedAt    DateTime @updatedAt
-
-    // Foreign key
-    userId String @unique
+    createdAt    DateTime @default(now())
 
     // Relations
-    user            User            @relation(fields: [userId], references: [id])
-    bookings        Booking[]
-    reviews         Review[]
+    user     User      @relation(fields: [userId], references: [id])
+    bookings Booking[]
+    reviews  Review[]
 
     tutorCategories TutorCategory[]
-
 
     // TODO: INDEXING
 }

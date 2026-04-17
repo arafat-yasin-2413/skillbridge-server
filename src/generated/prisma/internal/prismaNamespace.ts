@@ -1129,10 +1129,10 @@ export type CategoryScalarFieldEnum = (typeof CategoryScalarFieldEnum)[keyof typ
 
 export const TutorCategoryScalarFieldEnum = {
   id: 'id',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt',
   tutorId: 'tutorId',
-  categoryId: 'categoryId'
+  categoryId: 'categoryId',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 } as const
 
 export type TutorCategoryScalarFieldEnum = (typeof TutorCategoryScalarFieldEnum)[keyof typeof TutorCategoryScalarFieldEnum]
@@ -1140,14 +1140,15 @@ export type TutorCategoryScalarFieldEnum = (typeof TutorCategoryScalarFieldEnum)
 
 export const TutorProfileScalarFieldEnum = {
   id: 'id',
+  name: 'name',
+  userId: 'userId',
   bio: 'bio',
   hourlyRate: 'hourlyRate',
   availability: 'availability',
   rating: 'rating',
   totalReviews: 'totalReviews',
-  createdAt: 'createdAt',
   updatedAt: 'updatedAt',
-  userId: 'userId'
+  createdAt: 'createdAt'
 } as const
 
 export type TutorProfileScalarFieldEnum = (typeof TutorProfileScalarFieldEnum)[keyof typeof TutorProfileScalarFieldEnum]
