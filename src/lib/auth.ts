@@ -9,8 +9,14 @@ export const auth = betterAuth({
 
     trustedOrigins: [process.env.FRONTEND_APP_URL!],
 
+    
+
+    // sign-up, sign-in conditions
     emailAndPassword: {
         enabled: true,
+        autoSignIn: false,
+        requireEmailVerification: true,
     },
+
 
 });
