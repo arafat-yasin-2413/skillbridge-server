@@ -55,8 +55,7 @@ model TutorCategory {
 model TutorProfile {
     id           String   @id @default(uuid())
     name         String
-    // Foreign key
-    userId       String   @unique
+    userId       String   @unique // Foreign key
     bio          String?
     hourlyRate   Float
     availability String
@@ -117,7 +116,7 @@ model User {
     id            String   @id
     name          String
     email         String
-    role          String?     @default("STUDENT")
+    role          String?  @default("STUDENT")
     emailVerified Boolean  @default(false)
     image         String?
     createdAt     DateTime @default(now())
