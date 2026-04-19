@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.get("/", tutorControllers.getTutors);
 router.post("/",auth(UserRole.TUTOR), tutorControllers.createTutorProfile);
+router.patch("/assign-subject", auth(UserRole.TUTOR), tutorControllers.assignSubject);
 
 
 export const tutorRouter: Router = router;

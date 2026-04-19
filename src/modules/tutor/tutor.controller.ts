@@ -32,7 +32,22 @@ const getTutors = async (req: Request, res: Response) => {
     }
 };
 
+const assignSubject = async (req: Request, res: Response) => {
+    try {
+        console.log('assign subject controller');
+        const userId = req.user?.id;
+        const result = await tutorServices.assignSubject(userId as string);
+        return res.status(200).json(result);
+    } catch (error) {
+        return res.status(400).json({
+            message: "Subject Assign Operation Failed",
+            details: error,
+        });
+    }
+};
+
 export const tutorControllers = {
     getTutors,
     createTutorProfile,
+    assignSubject,
 };
