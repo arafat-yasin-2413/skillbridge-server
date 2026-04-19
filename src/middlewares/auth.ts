@@ -3,7 +3,7 @@ import { auth as betterAuth } from "../lib/auth";
 
 export enum UserRole {
     STUDENT = "STUDENT",
-    TEACHER = "TEACHER",
+    TUTOR = "TUTOR",
     ADMIN = "ADMIN",
 }
 
@@ -28,7 +28,9 @@ const auth = (...roles: UserRole[]) => {
             const session = await betterAuth.api.getSession({
                 headers: req.headers as any,
             });
+            // console.log(roles)
             console.log("printing session: -----", session);
+            // console.log("session.user.role: ", session?.user.role);
 
             // check if there is no session
             if (!session) {

@@ -4,9 +4,11 @@ import { tutorServices } from "./tutor.service";
 const createTutorProfile = async (req: Request, res: Response) => {
     try {
         // TODO: get user id from token and send it to the service
-        const userId = "hbvnjpaqdd";
+        const userId = req.user?.id;
+        const userName = req.user?.name;
+        console.log('name in controller : ',req.user?.name);
         const result = await tutorServices.createTutorProfile({...req.body,
-            userId}
+            userId, userName}
         );
         
         return res.status(201).json(result);
