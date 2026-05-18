@@ -40,17 +40,17 @@ export const auth = betterAuth({
     },
 
 	// injecting role field in session
-	// callbacks: {
-	// 	async session({ session, user}:{ session: Session, user: User}) {
-	// 		return {
-	// 			...session,
-	// 			user:{
-	// 				...session.user,
-	// 				role: user.role,
-	// 			},
-	// 		};
-	// 	},
-	// },
+	callbacks: {
+		async session({ session, user}:{ session: Session, user: User}) {
+			return {
+				...session,
+				user:{
+					...session.user,
+					role: user.role,
+				},
+			};
+		},
+	},
 
     // email verification process starts here
     emailVerification: {
