@@ -186,6 +186,7 @@ export const auth = betterAuth({
             }
         },
     },
+    
     // email verification process ends here
 
 	socialProviders: {
