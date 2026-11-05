@@ -15,6 +15,7 @@ const createCategory = async (req: Request, res: Response) => {
     }
 };
 
+//  package error 
 // const getTutors = async (req: Request, res: Response) => {
 //     try {
 //         const result = await tutorServices.getAllTutors();
